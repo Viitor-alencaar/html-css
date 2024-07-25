@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+
+        /* Para fazer a area onde o mouse passar ficar colorido (como o que acontece quando passando em cima de um botão), podemos utilisar o "div" e depois, na area "style" colocamos "div:hover". Para esconder um paragrafo, colocamos "div >p" logo depois "display: none", assim esconderá.
+        Para reaparecer, basta colocar novamento "div:hove{display: block}*/
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div >p{
+            display: none;
+        }
+        div:hover >p{display: block;
+                    color: white;
+                    background-color: black;
+                    width: 300px;
+        }
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+         <p>Texto escondido</p>
+    </div>
+</body>
+</html>

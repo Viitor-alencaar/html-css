@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    
+  <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios sites diferentes ou simplesmente aumente e diminue o tamanho do seu navegador</p>
+    <p>Para poder fazer a adaptação de imagem para cada tip de tamanho, basta utilisar "img" e selecionar a imagem do tamaho de 1000px por exemplo</p>
+    <p>Logo acima de img, vamos colocar a tag "picture" e depois "source:media:type" e selecionar qual arquivo. <mark style="background-color: red;">importante</mark>: precisa ser sempre acima, nunca abaixo</p>
+    
+   <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexivel"> 
+
+    </picture>
+
+    <h1>Rproduzindo audio</h1>
+    <p>para adicionar audio, coloque a tag "audio", logo em seguida coloque o arquivo e depois coloque "controls autoplay". <mark style="background-color: red;">obs</mark>: precisa ser antes do simbolo de "<"</p>
+    <audio src="midia/headlands.mp3" controls autoplay></audio><br>
+    <audio src="midia/serious piano.mp3" controls autoplay></audio>
+
+</body>
+</html>
