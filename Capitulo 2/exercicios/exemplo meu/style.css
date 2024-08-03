@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section#normal{
+    background-image: url("imagens/jogada.jpg");
+}
